@@ -18,5 +18,15 @@ RSpec.describe FunboxNmax do
 
       it { expect(subject).to eq([10**999, 5 * 10**300, (10**120 - 1)]) }
     end
+
+    describe 'numbers starting with zero' do
+      let(:str) { '012 7 6 08 0X' }
+      it { expect(subject).to eq([12, 8, 7]) }
+    end
+
+    describe 'empty string' do
+      let(:str) { '' }
+      it { expect(subject).to eq([]) }
+    end
   end
 end

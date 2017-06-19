@@ -12,7 +12,7 @@ module FunboxNmax
     # TODO: consider using some other iteration method?
     io.each_line(' ', 2000) do |line|
       line.scan(/\d+/).each do |e|
-        heap << GMP::Z.new(e)
+        heap << GMP::Z.new(e, 10)
         heap.pop if heap.length > n
       end
     end
