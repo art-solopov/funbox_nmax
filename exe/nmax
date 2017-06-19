@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'funbox_nmax'
+include FunboxNmax
+
+begin
+  n = (ARGV.first || 10).to_i
+  numbers = n_max(n)
+  puts "\nOutputting #{n} biggest numbers"
+  puts '=' * 80
+  puts numbers
+rescue Interrupt
+  puts 'Interrupt received, exiting...'
+  exit(0)
+end
