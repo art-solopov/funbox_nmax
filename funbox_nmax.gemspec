@@ -9,9 +9,10 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Artemiy Solopov"]
   spec.email         = ["art-solopov@yandex.ru"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Extracting numbers from text and finding N largest}
+  spec.description   = %q{This app extracts numbers from a text stream and
+                          outputs the largest N of these numbers}
+  spec.homepage      = "https://github.com/art-solopov/funbox_nmax"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
